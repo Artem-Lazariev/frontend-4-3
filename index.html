@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading Homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Прокрутіть вниз, щоб побачити лінійне завантаження</h1>
+    <button id="load-all-btn" class="btn">Завантажити всі картинки примусово</button>
+</header>
+
+<main class="gallery">
+    <div class="image-container">
+        <img class="lazy-image"
+             src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600' fill='%23ccc'><rect width='100%25' height='100%25'/></svg>"
+             data-src="https://picsum.photos/id/10/1200/800.webp"
+             alt="Heavy Image 1">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="image-container">
+        <img class="lazy-image"
+             src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600' fill='%23ccc'><rect width='100%25' height='100%25'/></svg>"
+             data-src="https://picsum.photos/id/20/1200/800.webp"
+             alt="Heavy Image 2">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="image-container">
+        <img class="lazy-image"
+             src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600' fill='%23ccc'><rect width='100%25' height='100%25'/></svg>"
+             data-src="https://picsum.photos/id/30/1200/800.webp"
+             alt="Heavy Image 3">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="image-container">
+        <img class="lazy-image"
+             src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600' fill='%23ccc'><rect width='100%25' height='100%25'/></svg>"
+             data-src="https://picsum.photos/id/40/1200/800.webp"
+             alt="Heavy Image 4">
+        <div class="spinner"></div>
+    </div>
+</main>
+
+<script type="module" src="index.js"></script>
+</body>
+</html>
