@@ -1,6 +1,6 @@
 const lazyImages = document.querySelectorAll('.lazy-image');
 const loadAllBtn = document.getElementById('load-all-btn');
-
+//load
 function loadImage(image) {
     const src = image.getAttribute('data-src');
     if (!src) return;
@@ -13,7 +13,7 @@ function loadImage(image) {
         image.removeAttribute('data-src');
     });
 }
-
+// add lazy load
 const observerOptions = {
     root: null,
     rootMargin: '0px 0px 50px 0px',
